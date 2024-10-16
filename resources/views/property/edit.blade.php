@@ -4,7 +4,7 @@
 @section('content')
 
 
-
+<div class="container my-3">
 <h1>Formulário de Edição :: Imóveis</h1>
 
 <?php
@@ -15,27 +15,26 @@ $property = $property[0];
 
     <?= csrf_field()?>
     <?=method_field('PUT')?>
-
+<div class="form-group">
     <label  for="title ">Título do imóvel</label>
-    <input type="text" name="title" id="title" value=" <?= $property->title ?> ">
+    <input type="text" name="title" id="title" value=" <?= $property->title ?> " class="form-control">
+</div>
 
-    <br />
-
+<div class="form-group">
     <label  for="description">Descrição</label>
-    <textarea name="description" id="description"  cols="30"  rows="10"  ><?= $property->description;?></textarea>
+    <textarea name="description" id="description"  cols="30"  rows="10" class="form-control" ><?= $property->description;?></textarea>
+</div>
 
-    <br />
-
+<div class="form-group">
     <label  for="rental_price">Valor de locação</label>
-    <input type="text" name="rental_price" id="rental_price" value=" <?= $property->rental_price; ?>">
+    <input type="text" name="rental_price" id="rental_price" value=" <?= $property->rental_price; ?>" class="form-control">
+</div>
 
-    <br />
-
+<div class="form-group">
     <label  for="sale_price">Valor de compra</label>
-    <input type="text" name="sale_price" id="sale_price" value=" <?= $property->sale_price; ?>">
-
-    <br />
-
+    <input type="text" name="sale_price" id="sale_price" value=" <?= $property->sale_price; ?>" class="form-control">
+</div>
     <button type="submit">Atualizar Imóvel</button>
 </form>
+</div>
 @endsection

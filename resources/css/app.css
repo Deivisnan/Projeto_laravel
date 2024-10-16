@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
 
 
 /* Adicionar estilos personalizados aqui */
@@ -44,20 +45,37 @@ body {
 
 .action-button.view {
     background-color: #4CAF50; /* Verde para ver mais */
+    padding: 6px 10px;
 }
 
 .action-button.edit {
     background-color: #008CBA; /* Azul para editar */
+    padding: 6px 10px;
 }
 
 .action-button.remove {
-    background-color: #f44336; /* Vermelho para remover */
+    padding: 2px 10px;
+    margin: 0;
     border: none;
+    background-color: red;
+    color: white;
     cursor: pointer;
+    display: inline-block;
+    height: 30px;
+
 }
 
 .action-button.remove:hover {
     background-color: #d32f2f; /* Tom mais escuro para o hover */
+}
+
+.form-container {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none; /* Se houver alguma borda */
+    vertical-align: middle;
+    background: #4CAF50;
 }
 
 /* Estilo do título */
@@ -71,7 +89,6 @@ body {
 }
 
 /* Importando a fonte do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
 
@@ -144,3 +161,4 @@ br {
     text-align: center;
     margin-bottom: 20px;
 }
+

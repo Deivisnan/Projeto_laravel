@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('property.index');
 });
 
 Route::get('/imoveis', 'App\Http\Controllers\PropertyController@index')->name('imoveis.index');

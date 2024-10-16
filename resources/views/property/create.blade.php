@@ -11,26 +11,25 @@
 
             <div class="form-group">
             <label  for="title ">Título do imóvel</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" class="form-control">
             </div>
 
-
+            <div class="form-group">
             <label  for="description">Descrição</label>
-            <textarea name="description" id="description"  cols="30"  rows="10"></textarea>
+            <textarea name="description" id="description"  cols="30"  rows="10" class="form-control"></textarea>
+            </div>
 
-            <br />
-
+            <div class="form-group">
             <label  for="rental_price">Valor de locação</label>
-            <input type="text" name="rental_price" id="rental_price">
+            <input type="text" name="rental_price" id="rental_price" class="form-control">
+            </div>
 
-            <br />
-
+            <div class="form-group">
             <label  for="sale_price">Valor de compra</label>
-            <input type="text" name="sale_price" id="sale_price">
+            <input type="text" name="sale_price" id="sale_price" class="form-control">
+            </div>
 
-            <br />
-
-            <button type="submit">Cadastrar Imóvel</button>
+            <button ty class=form-controlpe="submit">Cadastrar Imóvel</button>
         </form>
     </div>
 @endsection
